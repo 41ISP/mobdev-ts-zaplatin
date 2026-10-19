@@ -1,11 +1,17 @@
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 
 export default function ExpenseForm() {
   const [title, setTitle] = useState('');
   const [amount, setAmount] = useState('');
 
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault()
+    e.
+  }
+
+
   return (
-    <form className="form" >
+    <form className="form" > onSubmit={handleSubmit}>
       <input
         aria-label="Название"
         placeholder="Название"
